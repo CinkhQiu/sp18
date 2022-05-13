@@ -6,6 +6,12 @@ public class LeapYear {
     /** Calls isLeapYear to print correct statement.
      *  @param  year to be analyzed
      */
+    public static boolean isLeapYear(int year){
+    	if ((0 == year % 4 && year % 100 != 0) || (0 == a % 400))
+		return true;
+	else
+		return false;
+    }
     private static void checkLeapYear(int year) {
         if (isLeapYear(year)) {
             System.out.printf("%d is a leap year.\n", year);
